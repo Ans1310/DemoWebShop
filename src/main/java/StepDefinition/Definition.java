@@ -64,7 +64,9 @@ public class Definition {
 	}
 	@And("^Enter the email address$")
 	public void email(){
-		driver.findElement(By.xpath("//input[@id='Email']")).sendKeys(getSaltString()+"@gmail.com");
+		
+		
+driver.findElement(By.xpath("//input[@id='Email']")).sendKeys(getSaltString()+"@gmail.com");
 		
 	}
 	protected String getSaltString() {
