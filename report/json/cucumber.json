@@ -1,0 +1,542 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Launch the website and enter the details",
+        "description": "",
+        "id": "signup-as-a-new-user;launch-the-website-and-enter-the-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11703104300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "launch the website in \"chrome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chrome",
+                  "offset": 23
+                }
+              ],
+              "location": "Definition.openurl(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1066110900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click the register link to signup",
+            "match": {
+              "location": "Definition.clickregister()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 136210700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Select the Gender as \"Female\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Female",
+                  "offset": 22
+                }
+              ],
+              "location": "Definition.gender(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 365442200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Enter the first name as \"Anitha\" and last name as \"Vivek\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Anitha",
+                  "offset": 25
+                },
+                {
+                  "val": "Vivek",
+                  "offset": 51
+                }
+              ],
+              "location": "Definition.firstlastname(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 234945000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Enter the email address",
+            "match": {
+              "location": "Definition.email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 152200200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Enter the Password as \"Sree@2008\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sree@2008",
+                  "offset": 23
+                }
+              ],
+              "location": "Definition.password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 150987800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Enter the Confirm password as \"Sree@2008\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sree@2008",
+                  "offset": 31
+                }
+              ],
+              "location": "Definition.cpassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4457180100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "click Register button to submit",
+            "match": {
+              "location": "Definition.register()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 153873700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "valid the message \"Your registration completed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your registration completed",
+                  "offset": 19
+                }
+              ],
+              "location": "Definition.validatemessage(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@positiveScenario"
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "Launch the website and pass the multiple user data",
+        "description": "",
+        "id": "signup-as-a-new-user;launch-the-website-and-pass-the-multiple-user-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10582028100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "launch the website in \"chrome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chrome",
+                  "offset": 23
+                }
+              ],
+              "location": "Definition.openurl(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1079646700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "click the register link to signup",
+            "match": {
+              "location": "Definition.clickregister()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 100683000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Select the Gender as \"Male\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Male",
+                  "offset": 22
+                }
+              ],
+              "location": "Definition.gender(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 241570900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Enter the first name as \"Sankar\" and last name as \"Dev\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sankar",
+                  "offset": 25
+                },
+                {
+                  "val": "Dev",
+                  "offset": 51
+                }
+              ],
+              "location": "Definition.firstlastname(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235362000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Enter the email address",
+            "match": {
+              "location": "Definition.email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 161650000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Enter the Password as \"test@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@123",
+                  "offset": 23
+                }
+              ],
+              "location": "Definition.password(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 164045800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Enter the Confirm password as \"test@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@123",
+                  "offset": 31
+                }
+              ],
+              "location": "Definition.cpassword(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1396822600,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "click Register button to submit",
+            "match": {
+              "location": "Definition.register()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 62933400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "valid the message \"Your registration completed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your registration completed",
+                  "offset": 19
+                }
+              ],
+              "location": "Definition.validatemessage(String)"
+            },
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@positiveScenario01"
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Launch the website and pass the multiple user data",
+        "description": "",
+        "id": "signup-as-a-new-user;launch-the-website-and-pass-the-multiple-user-data;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14832950700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "launch the website in \"chrome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chrome",
+                  "offset": 23
+                }
+              ],
+              "location": "Definition.openurl(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1115162300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "click the register link to signup",
+            "match": {
+              "location": "Definition.clickregister()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 187014600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Select the Gender as \"Female\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Female",
+                  "offset": 22
+                }
+              ],
+              "location": "Definition.gender(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 366139300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Enter the first name as \"Nithya\" and last name as \"Dev\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nithya",
+                  "offset": 25
+                },
+                {
+                  "val": "Dev",
+                  "offset": 51
+                }
+              ],
+              "location": "Definition.firstlastname(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 192084900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Enter the email address",
+            "match": {
+              "location": "Definition.email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 197717800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Enter the Password as \"test@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@123",
+                  "offset": 23
+                }
+              ],
+              "location": "Definition.password(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 257475800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Enter the Confirm password as \"test@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@123",
+                  "offset": 31
+                }
+              ],
+              "location": "Definition.cpassword(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1373217100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "click Register button to submit",
+            "match": {
+              "location": "Definition.register()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 89694000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "valid the message \"Your registration completed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your registration completed",
+                  "offset": 19
+                }
+              ],
+              "location": "Definition.validatemessage(String)"
+            },
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@positiveScenario01"
+          }
+        ]
+      }
+    ],
+    "name": "Signup as a new user",
+    "description": "",
+    "id": "signup-as-a-new-user",
+    "keyword": "Feature",
+    "uri": "Features.feature"
+  }
+]
